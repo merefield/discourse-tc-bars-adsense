@@ -8,6 +8,7 @@ export default class BarsCustomHtmlComponent extends Component {
 
   @action
   async loadAdScript() {
+    let adsbygoogle;
     await loadScript(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${this.args.params.ad_client}`);
     (adsbygoogle = window.adsbygoogle || []).push({});
   }
