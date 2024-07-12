@@ -4,7 +4,7 @@ import { action } from "@ember/object";
 import didInsert from "@ember/render-modifiers/modifiers/did-insert";
 import loadScript from 'discourse/lib/load-script';
 
-export default class BarsCustomHtmlComponent extends Component {
+export default class BarsAdSense extends Component {
 
   @action
   async loadAdScript() {
